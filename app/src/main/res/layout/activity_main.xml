@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/appbluecolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/workoutLayout">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/workout_btn"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/workout_icon"
+                app:civ_border_color="#FFff"
+                app:civ_border_width="2dp"
+                android:onClick="WorkoutBtn"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/workout_btn"
+                android:gravity="center"
+                android:text="Workout"
+                android:textColor="#ffff"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center"
+                android:text="Fit"
+                android:textColor="#ffff"
+                android:textSize="60dp"
+                android:textStyle="bold|italic"
+                android:layout_weight="10"/>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:id="@+id/calLayout"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cal_btn"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@mipmap/cal_icon"
+                    app:civ_border_color="#FFff"
+                    app:civ_border_width="2dp"
+                    android:onClick="BMRbtn"/>
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cal_btn"
+                    android:gravity="center"
+                    android:text="Cal"
+                    android:textColor="#ffff"
+                    android:textStyle="bold|italic" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/neargymbtnLayout"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/gymLocation_btn"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@mipmap/gymlocation_icon"
+                app:civ_border_color="#FFff"
+                app:civ_border_width="2dp"
+                android:onClick="nearGymBtn"
+                />
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gymLocation_btn"
+                android:gravity="center"
+                android:text="Near Gym"
+                android:textColor="#ffff"
+                android:textStyle="bold|italic"
+               />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearlayputTextcalories"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/need1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you need "
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/maintain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/need1"
+                android:text="1,774 "
+                android:textColor="@color/appbluecolor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/maintain"
+                android:text=" Calories/day to maintain your weight."
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/need2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you need "
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tolose0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/need2"
+                android:text="1,774 "
+                android:textColor="@color/appbluecolor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tolose0.5"
+                android:text=" Calories/day to lose 0.5 kg per week."
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/need3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="you need "
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tolose1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/need3"
+                android:text="1,274 "
+                android:textColor="@color/appbluecolor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tolose1"
+                android:text=" Calories/day to lose 1 kg per week."
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="10dp">
+
+             <TextView
+                 android:id="@+id/need4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="you need "
+                 android:textSize="20sp" />
+
+
+             <TextView
+                 android:id="@+id/togain0.5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+
+                 android:layout_alignParentTop="true"
+                 android:layout_toEndOf="@+id/need4"
+                 android:text="1,274 "
+                 android:textColor="@color/appbluecolor"
+                 android:textSize="20sp"
+                 android:textStyle="bold" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_toEndOf="@+id/togain0.5"
+                 android:text=" Calories/day to gain 0.5 kg per week."
+                 android:textSize="20sp" />
+
+        </RelativeLayout> <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/need5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you need "
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/togain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/need5"
+            android:text="1,274 "
+            android:textColor="@color/appbluecolor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/togain1"
+            android:text=" Calories/day to gain 1 kg per week."
+            android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</merge>

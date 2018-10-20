@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calories.Calorie_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appbluecolor">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:text="Calories "
+                        android:textAllCaps="false"
+                        android:textColor="@color/whiet"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Lin_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbarlayout"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!--age-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textColor="@color/appbluecolor"
+                    android:textStyle="bold" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/MyErrorText"
+                    android:id="@+id/YearsError">
+
+                    <EditText
+                        android:id="@+id/AgeEditetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Years"
+                        android:maxLines="1"
+                        android:theme="@style/MyEditText"
+                        android:minLines="1"
+                        android:inputType="numberDecimal"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--weight -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textColor="@color/appbluecolor"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/MyErrorText"
+                    android:id="@+id/WeightError">
+
+                    <EditText
+                        android:id="@+id/WeightEditetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kg"
+                        android:maxLines="1"
+                        android:theme="@style/MyEditText"
+                        android:inputType="numberDecimal"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <!--Height-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textColor="@color/appbluecolor"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:errorTextAppearance="@style/MyErrorText"
+                    android:id="@+id/HeightError">
+
+                    <EditText
+                        android:id="@+id/heightEditetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="CM"
+                        android:maxLines="1"
+                        android:theme="@style/MyEditText"
+                        android:inputType="numberDecimal"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activity"
+                    android:textColor="@color/appbluecolor"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/exerciseSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+
+
+                <Button
+                    android:id="@+id/calcolateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/aclonica"
+                    android:onClick="calcolateBtn"
+                    android:text="calcolate"
+                    android:textColor="@color/whiet" />
+
+
+            </LinearLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/Lin_layout1"-->
+                <!--android:padding="10dp">-->
+
+                <!--<include layout="@layout/caloris_text"/>-->
+            <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+    
+
+    
+    
+
+</android.support.design.widget.CoordinatorLayout>
